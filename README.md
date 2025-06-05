@@ -3,8 +3,7 @@
   <h3 align="center">The Ultimate Memory Card Matching Experience</h3>
   
   [![Play Now](https://img.shields.io/badge/Play_Now-00cc66?style=for-the-badge&logo=game-controller&logoColor=white)](https://anant-4-code.github.io/Memory-flip/)
-  [![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com/yourusername/memory-flip/releases)
-  [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+
 
   <p align="center">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
