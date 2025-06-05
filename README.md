@@ -134,16 +134,16 @@
 
 <div align="center">
   <a href="game.html">
-    <img src="https://img.shields.io/badge/Play_Now-00cc66?style=for-the-badge&logo=game-controller&logoColor=white" alt="Play Now">
+    <img src="https://anant-4-code.github.io/Memory-flip/" alt="Play Now">
   </a>
   <a href="privacy.html">
     <img src="https://img.shields.io/badge/Privacy_Policy-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Privacy Policy">
   </a>
   <a href="terms.html">
-    <img src="https://img.shields.io/badge/Terms_of_Service-FF6B6B?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Terms of Service">
+    <img src="https://anant-4-code.github.io/Memory-flip/privacy.html" alt="Terms of Service">
   </a>
   <a href="mailto:anantrai0809@gmail.com">
-    <img src="https://img.shields.io/badge/Contact_Us-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Us">
+    <img src="https://anant-4-code.github.io/Memory-flip/terms.html" alt="Contact Us">
   </a>
 </div>
 
