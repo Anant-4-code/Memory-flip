@@ -136,10 +136,10 @@
   <a href="https://anant-4-code.github.io/Memory-flip/" target="_blank">
     <img src="https://img.shields.io/badge/Play_Now-00cc66?style=for-the-badge&logo=game-controller&logoColor=white" alt="Play Now">
   </a>
-  <a href="privacy.html">
+  <a href="https://anant-4-code.github.io/Memory-flip/privacy.html">
     <img src="https://img.shields.io/badge/Privacy_Policy-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Privacy Policy">
   </a>
-  <a href="terms.html">
+  <a href="https://anant-4-code.github.io/Memory-flip/terms.html">
     <img src="https://img.shields.io/badge/Terms_of_Service-FF6B6B?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Terms of Service">
   </a>
   <a href="mailto:anantrai0809@gmail.com">
