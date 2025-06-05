@@ -1,0 +1,77 @@
+/* Custom styles can be added here if needed */
+body {
+    background-color: #121212; /* Deep charcoal */
+    font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-charcoal {
+    background-color: #121212;
+}
+
+.neon-green-text {
+    color: #32cd32; /* Lime green */
+}
+
+.neon-green-bg {
+    background-color: #32cd32; /* Lime green */
+}
+
+.neon-green-border {
+    border-color: #32cd32; /* Lime green */
+}
+
+.light-gray-text {
+    color: #bbbbbb;
+}
+
+/* Ensure parent of absolute positioned badge is relative */
+.level-card-current {
+    position: relative;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32, 0 0 15px #32cd32;
+    }
+    50% {
+        box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32, 0 0 30px #32cd32, 0 0 40px rgba(50, 205, 50, 0.5);
+    }
+}
+
+.start-game-button {
+    box-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32;
+    animation: pulse-glow 2s infinite ease-in-out;
+    transition: all 0.3s ease-in-out; /* For smooth hover on other properties */
+}
+
+.start-game-button:hover {
+    box-shadow: 0 0 15px #32cd32, 0 0 30px #32cd32, 0 0 45px #32cd32, 0 0 55px rgba(50, 205, 50, 0.7);
+    transform: scale(1.08) translateY(-3px); /* Added translateY for upward movement */
+    background-color: #39e039; /* Slightly brighter green on hover */
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1.2em; /* Should match the line-height or be slightly less */
+    background-color: #32cd32; /* neon-green */
+    box-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32;
+    animation: blink-cursor 0.8s infinite;
+    margin-left: 2px;
+    vertical-align: middle; /* Align with text */
+}
+
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* .neon-glow-text class was here */ 

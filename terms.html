@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Memory Flip</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-charcoal text-white font-poppins min-h-screen flex flex-col">
+
+    <header class="py-6 bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold font-orbitron neon-green-text">Memory Flip</a>
+            <nav>
+                <a href="index.html#features" class="text-lg hover:neon-green-text transition-colors px-3">Features</a>
+                <a href="index.html#progress" class="text-lg hover:neon-green-text transition-colors px-3">Progress</a>
+                <a href="game.html" class="text-lg hover:neon-green-text transition-colors px-3">Play Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold font-orbitron text-center mb-12 neon-green-text">Terms of Service</h1>
+
+        <div class="prose prose-lg max-w-none text-gray-300 mx-auto bg-gray-800 p-8 rounded-lg shadow-xl">
+            <p class="text-sm text-gray-400">Last updated: June 5, 2025</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">1. Agreement to Terms</h2>
+            <p>By accessing or using Memory Flip (the "Game"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, then you may not access the Game.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">2. Use of the Game</h2>
+            <p>Memory Flip is provided for your personal, non-commercial use. You agree not to use the Game for any unlawful purpose or in any way that interrupts, damages, or impairs the service.</p>
+            <p>You are responsible for ensuring that your use of the Game complies with all applicable local, state, national, and international laws and regulations.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">3. Intellectual Property</h2>
+            <p>The Game and its original content (excluding content provided by users), features, and functionality are and will remain the exclusive property of Memory Flip and its licensors. The Game is protected by copyright, trademark, and other laws.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">4. Game Progress</h2>
+            <p>The Game saves your progress (current level and highest level achieved) using your web browser's localStorage feature. This data is stored locally on your device. We are not responsible for any loss of game progress data.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">5. Limitation of Liability</h2>
+            <p>In no event shall Memory Flip, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">6. Changes to Terms</h2>
+            <p>We reserve the right to modify or replace these Terms at any time. By continuing to access or use our Game after those revisions become effective, you agree to be bound by the revised terms.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">7. Contact Us</h2>
+            <p>If you have any questions about these Terms, please contact us at <a href="mailto:anantrai0809@gmail.com" class="text-neon-green-text hover:underline">anantrai0809@gmail.com</a>.</p>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center bg-gray-900">
+        <div class="container mx-auto px-4">
+            <p class="light-gray-text">&copy; <span id="currentYear"></span> Memory Flip. All rights reserved.</p>
+            <p class="light-gray-text mt-2">Designed to make your brain sharper, one flip at a time!</p>
+            <div class="mt-4">
+                <a href="privacy.html" class="text-neon-green-text hover:text-white px-3">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="terms.html" class="text-neon-green-text hover:text-white px-3">Terms of Service</a>
+                <span class="text-gray-500">|</span>
+                <a href="mailto:anantrai0809@gmail.com" class="text-neon-green-text hover:text-white px-3">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

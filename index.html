@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Flip - Flip. Match. Win.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-charcoal text-white font-poppins">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-8 bg-[#121212] relative overflow-hidden">
+        <!-- Radial gradient overlay -->
+        <div class="absolute inset-0 z-0" style="background: radial-gradient(circle at center, rgba(50, 205, 50, 0.1) 0%, rgba(18, 18, 18, 0) 60%);"></div>
+        <!-- Bottom fade to next section -->
+        <div class="absolute bottom-0 left-0 right-0 h-48 z-0" style="background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 0%, #121212 100%);"></div>
+        <div class="relative z-10">
+        <div class="max-w-2xl">
+            <h1 class="text-6xl md:text-7xl font-bold font-orbitron mb-4">Flip. Match. Win.</h1>
+            <p id="hero-subheading" class="text-xl md:text-2xl light-gray-text mb-8"></p>
+            <a href="game.html" class="neon-green-bg text-gray-900 font-bold py-4 px-10 rounded-full text-xl start-game-button">
+                <span class="mr-2">🎮</span>Start Game
+            </a>
+        </div>
+        <div class="mt-16 flex justify-center items-center space-x-4">
+            <!-- Placeholder for floating cards -->
+            <div class="w-24 h-36 bg-gray-700 rounded-lg border-2 neon-green-border transform -rotate-6 shadow-2xl flex items-center justify-center text-4xl neon-green-text">?</div>
+            <div class="w-28 h-40 bg-gray-800 rounded-lg border-2 neon-green-border transform rotate-3 shadow-2xl flex items-center justify-center text-5xl neon-green-text">★</div>
+            <div class="w-24 h-36 bg-gray-700 rounded-lg border-2 neon-green-border transform rotate-6 shadow-2xl flex items-center justify-center text-4xl neon-green-text">?</div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Game Preview Grid -->
+    <!-- SECTION TO BE REMOVED -->
+
+    <!-- Features Section -->
+    <section class="py-20 relative overflow-hidden" style="background: linear-gradient(to bottom, #121212 0%, #111827 100%);">
+        <!-- Top fade in -->
+        <div class="absolute top-0 left-0 right-0 h-48 z-0" style="background: linear-gradient(to bottom, #121212 0%, rgba(18, 18, 18, 0) 100%);"></div>
+        <!-- Bottom fade to next section -->
+        <div class="absolute bottom-0 left-0 right-0 h-48 z-0" style="background: linear-gradient(to bottom, rgba(17, 24, 39, 0) 0%, #111827 100%);"></div>
+        <div class="relative z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 font-orbitron">Why You'll Love Memory Flip</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full neon-green-bg flex items-center justify-center text-gray-900 text-3xl">
+                        <span>🔥</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Fast-Paced Levels</h3>
+                    <p class="light-gray-text">Increasing difficulty to challenge players and keep the excitement going.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full neon-green-bg flex items-center justify-center text-gray-900 text-3xl">
+                        <span>🧠</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Memory Boosting</h3>
+                    <p class="light-gray-text">Designed to enhance cognitive skills and improve your memory power.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full neon-green-bg flex items-center justify-center text-gray-900 text-3xl">
+                        <span>🎨</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Custom Themes</h3>
+                    <p class="light-gray-text">Unlockable card designs and backgrounds to personalize your game.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="py-20 relative overflow-hidden" style="background: #111827;">
+        <!-- Top fade in -->
+        <div class="absolute top-0 left-0 right-0 h-48 z-0" style="background: linear-gradient(to bottom, #111827 0%, rgba(17, 24, 39, 0.8) 100%);"></div>
+        <div class="relative z-10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 font-orbitron"><a href="game.html" class="hover:neon-green-text transition-colors">Track Your Progress</a></h2>
+            <p id="progress-description" class="text-xl light-gray-text mb-12 max-w-2xl mx-auto">Level up as you improve your memory skills! Conquer each stage and become a Memory Flip Master.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Level: Beginner -->
+                <div id="level-beginner-card" class="level-card bg-gray-800 p-8 rounded-xl shadow-2xl w-full md:w-1/3 border-2 border-lime-400 ring-4 ring-lime-400 ring-opacity-50 transform scale-105">
+                    <div class="text-5xl mb-4">🔰</div>
+                    <h3 class="text-2xl font-semibold neon-green-text mb-2">Beginner</h3>
+                    <p class="light-gray-text text-sm">Start your journey and learn the basics. Reach Intermediate after completing Level 16!</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-4">
+                        <div id="level-beginner-progress" class="bg-lime-500 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Level: Intermediate -->
+                <div id="level-intermediate-card" class="level-card bg-gray-800 p-8 rounded-xl shadow-2xl w-full md:w-1/3 border-2 border-transparent hover:border-lime-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-semibold neon-green-text mb-2">Intermediate</h3>
+                    <p class="light-gray-text text-sm">Sharpen your skills with more challenging card layouts. Reach Master after completing Level 33!</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-4">
+                        <div id="level-intermediate-progress" class="neon-green-bg h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Level: Master -->
+                <div id="level-master-card" class="level-card bg-gray-800 p-8 rounded-xl shadow-2xl w-full md:w-1/3 border-2 border-transparent hover:border-lime-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-semibold neon-green-text mb-2">Master</h3>
+                    <p class="light-gray-text text-sm">The ultimate challenge! Prove your mastery by conquering levels 34 through 50.</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-4">
+                        <div id="level-master-progress" class="bg-lime-500 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Device Compatibility Showcase -->
+    <!-- SECTION TO BE REMOVED -->
+
+    <!-- Call-to-Action Footer -->
+    <footer class="py-16 text-center" style="background-image: linear-gradient(to bottom, #111827 0%, #111827 15%, #111827 100%);">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-6 font-orbitron">Ready to Test Your Memory?</h2>
+            <p class="text-xl light-gray-text mb-10">Join Memory Flip today and start your journey to becoming a memory master!</p>
+            <a href="game.html" class="neon-green-bg text-gray-900 font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-lg sm:text-xl start-game-button inline-flex items-center justify-center w-full sm:w-auto transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-lime-500/30">
+                <span class="mr-2">🚀</span>
+                <span class="whitespace-nowrap">Play Now & Sharpen Your Mind!</span>
+            </a>
+            <div class="mt-12">
+                <p class="light-gray-text">&copy; <span id="indexCurrentYear"></span> Memory Flip. All rights reserved.</p>
+                <div class="mt-4">
+                    <a href="privacy.html" class="text-neon-green-text hover:text-white px-3">Privacy Policy</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="terms.html" class="text-neon-green-text hover:text-white px-3">Terms of Service</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="mailto:anantrai0809@gmail.com" class="text-neon-green-text hover:text-white px-3">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Existing code
+            const highestLevelStr = localStorage.getItem('memoryFlipHighestLevel');
+            const highestLevel = highestLevelStr ? parseInt(highestLevelStr, 10) : 0;
+
+            const progressDescription = document.getElementById('progress-description');
+            
+            const beginnerCard = document.getElementById('level-beginner-card');
+            const intermediateCard = document.getElementById('level-intermediate-card');
+            const masterCard = document.getElementById('level-master-card');
+
+            const beginnerProgress = document.getElementById('level-beginner-progress');
+            const intermediateProgress = document.getElementById('level-intermediate-progress');
+            const masterProgress = document.getElementById('level-master-progress');
+
+            const allCards = [beginnerCard, intermediateCard, masterCard];
+            const highlightClasses = ['border-lime-400', 'ring-4', 'ring-lime-400', 'ring-opacity-50', 'scale-105'];
+            const defaultBorder = ['border-transparent'];
+            const defaultHover = ['hover:border-lime-500', 'hover:-translate-y-2']; // Already on non-highlighted
+
+            // Function to set card style
+            function setCardStyle(card, isActive) {
+                highlightClasses.forEach(cls => card.classList.toggle(cls, isActive));
+                defaultBorder.forEach(cls => card.classList.toggle(cls, !isActive));
+                // Ensure hover effects are correctly managed if they were part of highlightClasses
+                // For now, explicit hover classes are on default state, highlight overrides them implicitly with scale etc.
+                if(isActive) {
+                    card.classList.remove(...defaultHover, 'border-transparent');
+                } else {
+                    card.classList.add(...defaultHover, 'border-transparent');
+                    card.classList.remove('scale-105','ring-4', 'ring-lime-400', 'ring-opacity-50'); // ensure these specific ones are off
+                }
+            }
+
+            // Reset all cards to default appearance first
+            allCards.forEach(card => setCardStyle(card, false));
+
+            let currentTierCard = beginnerCard;
+            let bProgress = 0;
+            let iProgress = 0;
+            let mProgress = 0;
+
+            // Define tier UPPER BOUNDARIES (level player is ON)
+            const beginnerTierUpperBoundary = 16;
+            const intermediateTierUpperBoundary = 33;
+            const masterTierUpperBoundary = 50; // Max level in the game
+
+            // Define number of levels TO COMPLETE for each tier
+            const levelsToCompleteInBeginner = 16;
+            const levelsToCompleteInIntermediate = 17; // 33 - 16
+            const levelsToCompleteInMaster = 17;       // 50 - 33
+
+            const motivationalQuotes = [
+                "Keep going! Every level sharpens your mind.",
+                "Amazing progress! Your memory is getting stronger.",
+                "You're a natural! Onwards to the next challenge.",
+                "Fantastic! Each match boosts your brainpower.",
+                "Impressive focus! See how far you can go.",
+                "You're crushing it! Memory master in the making.",
+                "Excellent work! The next level awaits your skills.",
+                "Unstoppable! Your concentration is top-notch.",
+                "Brilliant! Each level unlocks new potential.",
+                "Superb! Your memory skills are shining."
+            ];
+
+            let numCompletedLevels = highestLevel > 0 ? highestLevel - 1 : 0;
+
+            if (highestLevel > 0) {
+                if (numCompletedLevels > 0) {
+                    const quoteIndex = numCompletedLevels % motivationalQuotes.length;
+                    progressDescription.textContent = `You've completed ${numCompletedLevels} level${numCompletedLevels === 1 ? '' : 's'}! ${motivationalQuotes[quoteIndex]}`;
+                } else {
+                     // Player is on level 1, so 0 levels completed yet.
+                    progressDescription.textContent = "Welcome! Start your journey and see how sharp your memory can become.";
+                }
+
+                // Determine active tier card (based on current level player is ON)
+                if (highestLevel <= beginnerTierUpperBoundary) {
+                    currentTierCard = beginnerCard;
+                } else if (highestLevel <= intermediateTierUpperBoundary) {
+                    currentTierCard = intermediateCard;
+                } else {
+                    currentTierCard = masterCard;
+                }
+
+                // Calculate progress bars based on COMPLETED levels
+                if (numCompletedLevels < levelsToCompleteInBeginner) {
+                    bProgress = (numCompletedLevels / levelsToCompleteInBeginner) * 100;
+                    iProgress = 0;
+                    mProgress = 0;
+                } else if (numCompletedLevels < levelsToCompleteInBeginner + levelsToCompleteInIntermediate) {
+                    bProgress = 100;
+                    iProgress = ((numCompletedLevels - levelsToCompleteInBeginner) / levelsToCompleteInIntermediate) * 100;
+                    mProgress = 0;
+                } else {
+                    bProgress = 100;
+                    iProgress = 100;
+                    mProgress = ((numCompletedLevels - levelsToCompleteInBeginner - levelsToCompleteInIntermediate) / levelsToCompleteInMaster) * 100;
+                    mProgress = Math.min(mProgress, 100); // Cap at 100%
+                }
+            } else {
+                progressDescription.textContent = "Level up as you improve your memory skills! Conquer each stage and become a Memory Flip Master.";
+                currentTierCard = beginnerCard; // Default active card
+                bProgress = 0; iProgress = 0; mProgress = 0;
+            }
+            
+            allCards.forEach(card => setCardStyle(card, card === currentTierCard));
+
+            beginnerProgress.style.width = `${bProgress}%`;
+            intermediateProgress.style.width = `${iProgress}%`;
+            masterProgress.style.width = `${mProgress}%`;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Memory Flip</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-charcoal text-white font-poppins min-h-screen flex flex-col">
+
+    <header class="py-6 bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold font-orbitron neon-green-text">Memory Flip</a>
+            <nav>
+                <a href="index.html#features" class="text-lg hover:neon-green-text transition-colors px-3">Features</a>
+                <a href="index.html#progress" class="text-lg hover:neon-green-text transition-colors px-3">Progress</a>
+                <a href="game.html" class="text-lg hover:neon-green-text transition-colors px-3">Play Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold font-orbitron text-center mb-12 neon-green-text">Privacy Policy</h1>
+
+        <div class="prose prose-lg max-w-none text-gray-300 mx-auto bg-gray-800 p-8 rounded-lg shadow-xl">
+            <p class="text-sm text-gray-400">Last updated: [Date]</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">1. Introduction</h2>
+            <p>Welcome to Memory Flip ("we", "our", "us"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at [Your Contact Email/Method].</p>
+            <p>This privacy notice describes how we might use your information if you play our game or otherwise interact with us.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">2. What Information Do We Collect?</h2>
+            <p><strong>Information automatically collected:</strong></p>
+            <p>When you play Memory Flip, we may automatically collect certain information. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our game and other technical information. This information is primarily needed to maintain the security and operation of our game, and for our internal analytics and reporting purposes.</p>
+            <p>Specifically, our game utilizes browser localStorage to save your current game level and highest level achieved. This data is stored locally on your device and is not transmitted to our servers.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">3. How Do We Use Your Information?</h2>
+            <p>We use the information we collect or receive:</p>
+            <ul>
+                <li><strong>To save game progress:</strong> We use localStorage to save your game progress (current level and highest level achieved) directly on your device. This allows you to resume your game from where you left off.</li>
+                <li><strong>For analytics and improvements:</strong> We may use automatically collected information for data analysis, identifying usage trends, and to improve our game.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">4. Will Your Information Be Shared With Anyone?</h2>
+            <p>We do not share, sell, rent, or trade any of your information with third parties for their promotional purposes.</p>
+            <p>The game progress information (current level, highest level) is stored only in your browser's localStorage and is not transmitted to us or any third party.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">5. How Do We Keep Your Information Safe?</h2>
+            <p>Since we primarily store game progress data locally on your device via localStorage, the security of this data largely depends on the security of your device and browser. We do not have access to this data remotely.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">6. What Are Your Privacy Rights?</h2>
+            <p>Since we do not collect personal identification information, your primary control over the data (game progress) is through your browser's settings. You can clear your browser's localStorage to remove any game data stored by Memory Flip.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">7. Updates To This Notice</h2>
+            <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated "Last updated" date and the updated version will be effective as soon as it is accessible. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
+
+            <h2 class="text-2xl font-semibold mt-6 mb-3 text-white">8. How Can You Contact Us About This Notice?</h2>
+            <p>If you have questions or comments about this notice, you may email us at <a href="mailto:anantrai0809@gmail.com" class="text-neon-green-text hover:underline">anantrai0809@gmail.com</a></p>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center bg-gray-900">
+        <div class="container mx-auto px-4">
+            <p class="light-gray-text">&copy; <span id="currentYear"></span> Memory Flip. All rights reserved.</p>
+            <p class="light-gray-text mt-2">Designed to make your brain sharper, one flip at a time!</p>
+            <div class="mt-4">
+                <a href="privacy.html" class="text-neon-green-text hover:text-white px-3">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="terms.html" class="text-neon-green-text hover:text-white px-3">Terms of Service</a>
+                <span class="text-gray-500">|</span>
+                <a href="mailto:anantrai0809@gmail.com" class="text-neon-green-text hover:text-white px-3">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
