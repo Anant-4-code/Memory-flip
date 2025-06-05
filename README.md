@@ -189,8 +189,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>Enjoying Memory Flip? Consider giving it a ⭐️ on GitHub!</p>
   
-  <a href="https://github.com/yourusername/memory-flip/stargazers">
-    <img src="https://img.shields.io/github/stars/yourusername/memory-flip?style=social" alt="GitHub stars">
+  <a href="https://github.com/Anant-4-code/Memory-flip/stargazers">
+    <img src="https://img.shields.io/github/stars/Anant-4-code/Memory-flip?style=social" alt="GitHub stars">
   </a>
   
   <p>Made with ❤️ by Memory Flip Team</p>
